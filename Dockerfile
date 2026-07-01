@@ -20,6 +20,7 @@ RUN apk add --no-cache openssl python3 \
         -subj "/CN=tai-lieu-odoo17/O=Edupath"
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY deploy/technical-401.html /usr/share/nginx/html/technical-401.html
 
 WORKDIR /build
 COPY scripts/generate_htpasswd.py ./scripts/
