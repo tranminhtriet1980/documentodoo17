@@ -1,0 +1,19 @@
+# Chạy tài liệu Odoo 17 — image build từ GitHub Actions hoặc docker compose build
+# HTTP:  http://<IP>:4546/
+# HTTPS: https://<IP>:4547/
+
+services:
+  tai-lieu-odoo17:
+    image: tai-lieu-odoo17:latest
+    build:
+      context: .
+      args:
+        TECH_PASSWORD: ${TECH_PASSWORD:-Edupath2026!}
+    container_name: tai-lieu-odoo17
+    restart: unless-stopped
+    ports:
+      - "4546:4546"
+      - "4547:4547"
+    volumes:
+      # Ghi đè mật khẩu Ky thuat tren server (khong commit file nay len Git)
+      - ./config/htpasswd:/etc/nginx/htpasswd:ro

@@ -1,0 +1,257 @@
+/* Header site: chỉ chữ, không logo hình (Material / Odoo icon) */
+.md-header__button.md-logo {
+  display: none !important;
+}
+
+.md-nav__button.md-logo {
+  display: none !important;
+}
+
+.md-header__title {
+  margin-left: 0.4rem;
+}
+
+/* Ảnh quy trình kế toán — vừa trang, không chiếm full màn hình */
+.md-typeset img.doc-screenshot {
+  max-width: 720px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.75rem 0;
+  border: 1px solid var(--md-default-fg-color--lightest, #e0e0e0);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.md-typeset details.abstract img.doc-screenshot {
+  max-width: 680px;
+}
+
+/* Ảnh nhỏ hơn (màn đăng nhập, nút bấm...) — canh giữa trang */
+.md-typeset img.doc-screenshot-sm {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.75rem auto;
+  border: 1px solid var(--md-default-fg-color--lightest, #e0e0e0);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Bo gach ngang den (markdown --- va hr mac dinh) --- */
+.md-typeset hr,
+hr {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+/* --- Bo vach/shadow den duoi header & tab (sticky tabs gay loi khi mo file://) --- */
+.md-header,
+.md-tabs,
+.md-header--lifted {
+  box-shadow: none !important;
+}
+
+/* Footer / phan trang: bo vien den */
+.md-footer {
+  border-top: none !important;
+  background: var(--md-default-bg-color) !important;
+  box-shadow: none !important;
+}
+
+/* navigation.indexes / lifted: shadow sticky menu trai gay vach ngang den */
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  box-shadow: none !important;
+  position: relative !important;
+}
+
+/* --- Menu trai: de doc, de tim muc (Kho van, Ton kho...) --- */
+.md-sidebar--primary .md-nav__link {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  opacity: 1 !important;
+  color: #1a1a1a !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link {
+  color: #e8e8e8 !important;
+}
+
+/* Danh mục lớn (I. II. III.) — cấp module, chữ đậm */
+.md-sidebar--primary > .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary > .md-nav--primary > .md-nav__list > .md-nav__item--section > label.md-nav__link {
+  font-weight: 700 !important;
+  color: #4527a0 !important;
+  font-size: 0.9rem;
+  margin-top: 0.45rem;
+  letter-spacing: 0.01em;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary > .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--primary > .md-nav--primary > .md-nav__list > .md-nav__item--section > label.md-nav__link {
+  color: #b39ddb !important;
+}
+
+/* Danh mục con (CRM, Đơn bán…) — nhẹ hơn cấp I */
+.md-sidebar--primary .md-nav__item--section .md-nav__item--section > .md-nav__link,
+.md-sidebar--primary .md-nav__item--section .md-nav__item--section > label.md-nav__link {
+  font-weight: 600 !important;
+  color: #5e35b1 !important;
+  font-size: 0.84rem;
+  margin-top: 0.25rem;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--section .md-nav__item--section > label.md-nav__link {
+  color: #9575cd !important;
+}
+
+/* Muc con (CRM, Ton kho, Nhap kho...) — Material mac dinh rat nhat */
+.md-sidebar--primary .md-nav .md-nav__link {
+  color: #333 !important;
+  opacity: 1 !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav .md-nav__link {
+  color: #d0d0d0 !important;
+}
+
+.md-nav__link--active {
+  font-weight: 600;
+  color: #4527a0 !important;
+  background: rgba(69, 39, 160, 0.08);
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #ce93d8 !important;
+  background: rgba(179, 157, 219, 0.12);
+}
+
+/* Thanh cuon menu trai ro hon */
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(69, 39, 160, 0.5) transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 10px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: rgba(69, 39, 160, 0.45);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+  background: rgba(69, 39, 160, 0.65);
+  background-clip: content-box;
+}
+
+/* --- Bao ve hinh anh: chan keo, chuot phai, in an --- */
+.md-typeset img,
+.img-guard img {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  pointer-events: none;
+}
+
+.img-guard {
+  position: relative;
+  display: block;
+  max-width: 100%;
+}
+
+.img-guard::after {
+  content: attr(data-doc-watermark);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(69, 39, 160, 0.22);
+  pointer-events: auto;
+  background: repeating-linear-gradient(
+    -24deg,
+    transparent,
+    transparent 48px,
+    rgba(69, 39, 160, 0.04) 48px,
+    rgba(69, 39, 160, 0.04) 96px
+  );
+}
+
+[data-md-color-scheme="slate"] .img-guard::after {
+  color: rgba(179, 157, 219, 0.28);
+}
+
+@media print {
+  .md-typeset img,
+  .img-guard {
+    display: none !important;
+  }
+}
+
+/* Mo khi tab an / sau PrintScreen (han che, khong tuyet doi) */
+body.doc-hidden-blur .md-content,
+body.doc-anti-capture .md-content {
+  filter: blur(14px);
+  transition: filter 0.15s ease;
+}
+
+body.doc-hidden-blur .img-guard img,
+body.doc-anti-capture .img-guard img {
+  opacity: 0.12;
+}
+
+/* Khoa muc Ky thuat khi mo file:// */
+body.technical-locked .md-container {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#technical-auth-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 12, 40, 0.72);
+  padding: 1.5rem;
+}
+
+.technical-auth-box {
+  max-width: 28rem;
+  background: var(--md-default-bg-color, #fff);
+  color: var(--md-default-fg-color, #1a1a1a);
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.technical-auth-box h2 {
+  margin-top: 0;
+  color: #4527a0;
+}
+
+.technical-auth-hint {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 0;
+}

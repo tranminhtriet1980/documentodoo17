@@ -1,0 +1,44 @@
+HUONG DAN SU DUNG TREN MAC
+==========================
+
+1. Copy ca folder "Tai lieu odoo17" sang Mac (USB, iCloud, AirDrop...)
+
+2. Lan dau — cai dat tu dong (Terminal):
+
+   cd "/duong/dan/Tai lieu odoo17"
+   bash CaiDatMac.sh
+
+   Script se:
+   - Tao .venv (Python ao)
+   - Cai mkdocs, mkdocs-material, Pillow
+   - Build thu muc site/
+   - Hoi co mo trinh duyet khong
+
+3. Hang ngay — xem tai lieu:
+
+   bash MoTaiLieuMac.sh
+
+   Hoac: open site/index.html (xem file tinh, khong can cai gi them)
+
+4. Sau khi sua file .md:
+
+   bash BuildTaiLieuMac.sh
+
+5. Neu chua co Python 3:
+
+   brew install python3
+
+   (Cai Homebrew truoc: https://brew.sh )
+
+6. Docker (tuy chon):
+
+   docker compose build
+   docker compose up -d
+   Mo: http://localhost:4546/
+
+LUU Y
+-----
+- File .bat (Windows) KHONG chay tren Mac — dung file .sh / CaiDatMac.sh
+- BuildTaiLieuMac.sh KHONG ghi de noi dung .md da sua tay
+- Trich lai tu PowerPoint: python3 scripts/extract_pptx_du_an.py (Du an)
+                          python3 scripts/extract_pptx_images.py (Ke toan)

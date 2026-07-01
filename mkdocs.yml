@@ -1,0 +1,168 @@
+site_name: Tài liệu Odoo 17
+site_description: Tài liệu Odoo 17 tiếng Việt — Tính năng (Functional) & Kỹ thuật (Technical)
+site_author: Edupath
+
+use_directory_urls: false
+
+theme:
+  name: material
+  language: vi
+  # Không dùng logo hình (Material icon / Odoo) — chỉ chữ tiêu đề trên header
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.prune
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Chế độ tối
+    - scheme: slate
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Chế độ sáng
+
+plugins:
+  - search:
+      lang:
+        - vi
+        - en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/protect-content.js
+  - javascripts/technical-auth.js
+
+extra:
+  social: []
+  generator: false
+
+nav:
+  - Trang chủ: index.md
+
+  - "Tính năng (Functional)":
+      - functional/index.md
+      - "I. Bắt đầu":
+          - "1. Giới thiệu Odoo 17": gioi-thieu/odoo17.md
+          - "2. Giao diện": gioi-thieu/giao-dien.md
+          - "3. Đăng nhập & phân quyền": gioi-thieu/dang-nhap-phan-quyen.md
+      - "II. Bán hàng":
+          - Tổng quan Bán hàng: ban-hang/index.md
+          - "1. CRM":
+              - "Chương I: Thao tác chung": ban-hang/crm/thao-tac-chung.md
+              - "Chương II: Leads": ban-hang/crm/chuong-ii-leads.md
+              - "Chương III: Pipeline (Cơ hội)": ban-hang/crm/pipeline.md
+              - "Chương IV: Sale Order (Đơn hàng)": ban-hang/crm/chuong-iv-sale-order.md
+              - "Chương V: Báo cáo và làm việc với báo cáo": ban-hang/crm/bao-cao.md
+          - "2. Đơn bán":
+              - "1. Báo giá": ban-hang/ban-hang/bao-gia.md
+              - "2. Đơn bán": ban-hang/ban-hang/don-ban.md
+              - "3. Hóa đơn khách hàng": ban-hang/ban-hang/hoa-don.md
+      - "III. Mua hàng":
+          - Tổng quan Mua hàng: mua-hang/index.md
+          - "1. Nhà cung cấp": mua-hang/nha-cung-cap.md
+          - "2. Đơn mua": mua-hang/don-mua.md
+          - "3. Nhận hàng": mua-hang/nhan-hang.md
+      - "IV. Kho vận (Tồn kho)":
+          - Tổng quan Kho: kho/index.md
+          - "1. Sản phẩm": kho/san-pham.md
+          - "2. Nhập kho": kho/nhap-kho.md
+          - "3. Xuất kho": kho/xuat-kho.md
+          - "4. Tồn kho": kho/ton-kho.md
+          - "5. Kiểm kê": kho/kiem-ke.md
+      - "V. Kế toán":
+          - Tổng quan Kế toán: ke-toan/index.md
+          - "1. Quy trình nghiệp vụ": ke-toan/quy-trinh-nghiep-vu.md
+          - "2. Quy trình (hình ảnh)": ke-toan/quy-trinh-hinh-anh.md
+          - "3. Hóa đơn": ke-toan/hoa-don.md
+          - "4. Thanh toán": ke-toan/thanh-toan.md
+          - "5. Sổ cái": ke-toan/so-cai.md
+          - "6. Báo cáo": ke-toan/bao-cao.md
+      - "VI. Nhân sự":
+          - Tổng quan Nhân sự: nhan-su/index.md
+          - "1. Nhân viên": nhan-su/nhan-vien.md
+          - "2. Chấm công": nhan-su/cham-cong.md
+          - "3. Nghỉ phép": nhan-su/nghi-phep.md
+          - "4. Tuyển dụng": nhan-su/tuyen-dung.md
+      - "VII. Dự án":
+          - Tổng quan Dự án: du-an/index.md
+          - "1. Quy trình XLHS": du-an/quy-trinh-xlhs.md
+          - "2. Phụ lục hình ảnh XLHS": du-an/phu-luc-hinh-anh.md
+          - "3. Nhiệm vụ": du-an/nhiem-vu.md
+          - "4. Timesheet": du-an/timesheet.md
+      - "VIII. Website":
+          - Tổng quan Website: website/index.md
+          - "1. Trang web": website/trang-web.md
+          - "2. Cửa hàng online": website/cua-hang.md
+      - "IX. Marketing":
+          - Tổng quan Marketing: marketing/index.md
+          - "1. Email marketing": marketing/email.md
+          - "2. Sự kiện": marketing/su-kien.md
+      - "X. Sản xuất":
+          - Tổng quan Sản xuất: san-xuat/index.md
+          - "1. BOM": san-xuat/bom.md
+          - "2. Lệnh sản xuất": san-xuat/lenh-san-xuat.md
+      - "XI. Năng suất":
+          - Tổng quan Năng suất: productivity/index.md
+          - "1. Thảo luận": productivity/thao-luan.md
+          - "2. Lịch & cuộc họp": productivity/lich-cuoc-hop.md
+      - "XII. Quản trị nghiệp vụ":
+          - Tổng quan Cài đặt: cai-dat/index.md
+          - "1. Ứng dụng": cai-dat/ung-dung.md
+          - "2. Người dùng": cai-dat/nguoi-dung.md
+          - "3. Quyền truy cập": cai-dat/quyen-truy-cap.md
+          - "4. Công ty": cai-dat/cong-ty.md
+
+  - "Kỹ thuật (Technical)":
+      - Tổng quan Kỹ thuật: technical/index.md
+      - "I. Tổng quan":
+          - "1. Kiến trúc": technical/tong-quan/kien-truc.md
+          - "2. Phiên bản": technical/tong-quan/phien-ban.md
+          - "3. Triển khai": technical/tong-quan/trien-khai.md
+      - "II. Cài đặt & vận hành":
+          - "1. Cài đặt server": technical/van-hanh/cai-dat-server.md
+          - "2. odoo.conf": technical/van-hanh/odoo-conf.md
+          - "3. Khởi động & nâng cấp": technical/van-hanh/khoi-dong-nang-cap.md
+          - "4. Sao lưu & phục hồi": technical/van-hanh/sao-luu-phuc-hoi.md
+      - "III. Cơ sở dữ liệu":
+          - "1. PostgreSQL": technical/database/postgresql.md
+          - "2. Backup & restore": technical/database/backup-restore.md
+          - "3. Multi-company": technical/database/multi-company.md
+      - "IV. Module & mã nguồn":
+          - "1. Cấu trúc module": technical/module/cau-truc-module.md
+          - "2. Nâng cấp module": technical/module/nang-cap-module.md
+          - "3. Developer mode": technical/module/developer-mode.md
+      - "V. Tích hợp & API":
+          - "1. XML-RPC": technical/tich-hop/xml-rpc.md
+          - "2. REST API": technical/tich-hop/rest-api.md
+          - "3. Webhook & email": technical/tich-hop/webhook-email.md
+      - "VI. Bảo mật kỹ thuật":
+          - "1. Quyền kỹ thuật": technical/bao-mat/quyen-ky-thuat.md
+          - "2. SSL & domain": technical/bao-mat/ssl-domain.md
+          - "3. Tham số hệ thống": technical/bao-mat/tham-so-he-thong.md

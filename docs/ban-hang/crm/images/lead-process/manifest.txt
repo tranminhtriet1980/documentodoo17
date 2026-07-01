@@ -1,0 +1,34 @@
+# Ảnh Chương II — Lead (copy từ CRM VAN/images/04-lead-process/)
+# Đặt file vào thư mục này: docs/ban-hang/crm/images/lead-process/
+
+- crm-lead-to-opportunity-tree.svg
+- mo-trang-lam-viec-lead-all-leads.png
+- chuongI_Muc1_giao-dien-lead.png
+- lay-lead-vp-ve-tvv.png
+- mo-lead-tu-dashboard-xu-ly-lead-moi.png
+- goi-lead-tu-dong-stringee1.png
+- goi-lead-tu-dong-stringee2.png
+- Lead-cap-nhat-thong-tin-sau-lien-he.png
+- ghi-chu.png
+- xac-dinh-loai-khach-hang-khach-hang.png
+- xac-dinh-loai-khach-hang-nguoi-dai-dien.png
+- so-do-danh-gia-qualified.png
+- so-do-danh-gia-qualified1.png
+- lead-invalid-phone-number.png
+- tinh-trang-lien-he-sau-lan-1.png
+- tinh-trang-da-xac-minh.png
+- tinh-trang-lien-he-sau-lan-3-ngung-cham-soc.png
+- tinh-trang-ngung-cham-soc-chua-tu-van.png
+- tinh-trang-close-gui-cs-kiem-tra-sdt.png
+- tinh-trang-close-cs-tra-ve-sdt-sai.png
+- tinh-trang-close-cs-cap-nhat-sdt-dung.png
+- danh-gia-sao.png
+- danh-gia-sao0.png
+- danh-gia-sao1.png
+- danh-gia-sao2.png
+- ket-qua-lead.png
+- ket-qua-lead1.png
+- ket-qua-lead-loi.png
+- Lead-moi-tvv.png
+- Lead-moi-tvv1.png
+- Lead-moi-tvv2.png

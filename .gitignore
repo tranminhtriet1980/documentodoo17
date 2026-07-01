@@ -1,0 +1,24 @@
+# Build output
+site/
+
+# Auth (dùng htpasswd.default + generate_htpasswd.py trên server)
+config/htpasswd
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDE / local
+.cursor/
+agent-transcripts/
+mcps/
+
+# Archives / temp
+*.zip
+scripts/_pptx_slides_text.txt
+
+# OS
+.DS_Store
+Thumbs.db

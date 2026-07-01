@@ -1,0 +1,16 @@
+.git
+.cursor
+agent-transcripts
+mcps
+site
+site.zip
+docker.zip
+*.zip
+CRM VAN
+MR UT
+Mr Khanh
+**/__pycache__
+**/*.pyc
+.venv
+venv
+config/htpasswd

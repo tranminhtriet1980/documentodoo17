@@ -1,0 +1,15 @@
+# Tai khoan muc Ky thuat (Technical)
+
+File htpasswd mac dinh:
+- User: technical
+- Mat khau mac dinh: Edupath2026!
+
+Doi mat khau:
+  py -3 scripts/generate_htpasswd.py
+
+Hoac tren Mac/Linux:
+  python3 scripts/generate_htpasswd.py
+
+Sau khi doi, build lai site (neu can) va restart Docker / server local.
+
+Docker: file nay duoc mount vao /etc/nginx/htpasswd trong container.

@@ -1,0 +1,42 @@
+name: Deploy Docker
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy — git pull + docker compose
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DOCKER_HOST }}
+          username: ${{ secrets.DOCKER_USER }}
+          key: ${{ secrets.DOCKER_SSH_KEY }}
+          port: ${{ secrets.DOCKER_SSH_PORT || 22 }}
+          script: |
+            set -e
+            DEPLOY_DIR="${{ secrets.DOCKER_DEPLOY_DIR || '/opt/tai-lieu-odoo17' }}"
+            REPO="https://github.com/${{ github.repository }}.git"
+            TECH_PASS="${{ secrets.TECH_PASSWORD }}"
+            [ -z "$TECH_PASS" ] && TECH_PASS="Edupath2026!"
+            export TECH_PASSWORD="$TECH_PASS"
+
+            if [ -d "$DEPLOY_DIR/.git" ]; then
+              git -C "$DEPLOY_DIR" fetch origin
+              git -C "$DEPLOY_DIR" reset --hard origin/main 2>/dev/null || git -C "$DEPLOY_DIR" reset --hard origin/master
+            else
+              mkdir -p "$(dirname "$DEPLOY_DIR")"
+              git clone "$REPO" "$DEPLOY_DIR"
+            fi
+
+            cd "$DEPLOY_DIR"
+            if [ ! -f config/htpasswd ]; then
+              python3 scripts/generate_htpasswd.py -u technical -p "$TECH_PASS"
+            fi
+            docker compose build --build-arg TECH_PASSWORD="$TECH_PASS"
+            docker compose up -d
+            docker image prune -f
+            echo "Deploy OK — http://${{ secrets.DOCKER_HOST }}:4546/"

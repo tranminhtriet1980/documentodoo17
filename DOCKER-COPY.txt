@@ -1,0 +1,18 @@
+Copy SANG MAY KHAC (vd. C:\Docker\docs) — CAN DU 5 MUC:
+
+  1. Dockerfile
+  2. docker-compose.yml
+  3. nginx.conf          <-- file nay (cung cap voi Dockerfile)
+  4. .dockerignore       (tuy chon)
+  5. site\               (ca thu muc, co index.html)
+
+KHONG CAN thu muc docker\ neu da co nginx.conf o cap goc.
+
+Tren may dev: chay DongGoiDocker.bat de copy tu dong.
+
+Lenh:
+  cd C:\Docker\docs
+  docker compose build
+  docker compose up -d
+
+Mo: http://localhost:4546/
