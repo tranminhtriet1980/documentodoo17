@@ -35,12 +35,38 @@ docker compose up -d
 
 ## Cập nhật khi có thay đổi trên GitHub
 
+**Quan trọng:** Phải `git pull` **và** `docker compose build --no-cache` — site được build **bên trong image**, không dùng thư mục `site/` cũ.
+
+### Windows server (`C:\Docker\docs`)
+
 ```bat
-cd C:\Docker\documentodoo17
+cd C:\Docker\docs
+scripts\CapNhatTrenServer.bat
+```
+
+Hoặc tay:
+
+```bat
+cd C:\Docker\docs
 git pull
-docker compose build
+docker compose down
+docker compose build --no-cache
 docker compose up -d
 ```
+
+### Linux server
+
+```bash
+cd /opt/documentodoo17
+./scripts/cap-nhat-tren-server.sh
+```
+
+## Server chưa thấy dữ liệu mới?
+
+1. Server **chưa phải git repo** → ghi đè như lần đầu (clone lại).
+2. Chỉ `docker compose restart` → **không đủ**, phải `build --no-cache`.
+3. Bản Docker cũ mount `./site` → xóa thư mục `site/` cũ, dùng repo mới (không cần `site/` local).
+4. Trình duyệt cache → thử Ctrl+F5 hoặc tab ẩn danh.
 
 ## Truy cập
 
