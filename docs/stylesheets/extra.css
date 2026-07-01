@@ -39,6 +39,19 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
+/* Ảnh CRM / màn hình Odoo — gần kích thước gốc, chữ rõ (không phóng quá nhỏ) */
+.md-typeset img.doc-screenshot-crm {
+  max-width: 960px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.75rem 0;
+  border: 1px solid var(--md-default-fg-color--lightest, #e0e0e0);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  image-rendering: auto;
+}
+
 /* --- Bo gach ngang den (markdown --- va hr mac dinh) --- */
 .md-typeset hr,
 hr {
@@ -197,6 +210,13 @@ hr {
 
 [data-md-color-scheme="slate"] .img-guard::after {
   color: rgba(179, 157, 219, 0.28);
+}
+
+/* Ảnh tài liệu: bỏ lớp phủ watermark — tránh chữ trong ảnh bị mờ */
+.img-guard:has(img.doc-screenshot)::after,
+.img-guard:has(img.doc-screenshot-crm)::after,
+.img-guard:has(img.doc-screenshot-sm)::after {
+  display: none;
 }
 
 @media print {
