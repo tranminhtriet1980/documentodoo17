@@ -57,7 +57,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/protect-content.js
-  - javascripts/technical-auth.js
+  - javascripts/technical-home-redirect.js
 
 extra:
   social: []

@@ -28,7 +28,21 @@ class DocsHandler(SimpleHTTPRequestHandler):
         path = self.path.split("?", 1)[0]
         return path == "/technical" or path.startswith("/technical/")
 
+    def _home_url_html(self) -> str:
+        return (
+            "(location.hostname==='docs.edupath.org.vn'||/\\.edupath\\.org\\.vn$/i.test(location.hostname))"
+            '? "https://docs.edupath.org.vn/"'
+            ': (location.origin+"/index.html")'
+        )
+
     def _unauthorized(self) -> None:
+        home_js = self._home_url_html()
+        body = (
+            "<!DOCTYPE html><html><head><meta charset=utf-8>"
+            "<title>Chuyen huong</title>"
+            f"<script>location.replace({home_js});</script>"
+            "</head><body><p>Dang chuyen ve trang chu...</p></body></html>"
+        )
         self.send_response(401)
         self.send_header(
             "WWW-Authenticate",
@@ -36,12 +50,6 @@ class DocsHandler(SimpleHTTPRequestHandler):
         )
         self.send_header("Content-Type", "text/html; charset=utf-8")
         self.end_headers()
-        body = (
-            "<!DOCTYPE html><html><head><meta charset=utf-8>"
-            "<title>Dang nhap Ky thuat</title></head>"
-            "<body><h1>Ky thuat (Technical)</h1>"
-            "<p>Can dang nhap de xem muc nay.</p></body></html>"
-        )
         self.wfile.write(body.encode("utf-8"))
 
     def _check_auth(self) -> bool:
