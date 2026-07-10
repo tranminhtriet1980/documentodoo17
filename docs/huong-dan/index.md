@@ -31,7 +31,7 @@ Phần **Hướng dẫn người dùng** mô tả **cách sử dụng các tính
 | STT | Nhóm | Mô tả |
 |-----|------|--------|
 | I | [Bắt đầu](../gioi-thieu/odoo17.md) | Giới thiệu, giao diện, đăng nhập |
-| II | [Bán hàng](../ban-hang/index.md) | CRM, báo giá, đơn bán |
+| II | [CRM & Bán hàng](../ban-hang/crm/thao-tac-chung.md) | CRM, báo giá, đơn bán |
 | III | [Mua hàng](../mua-hang/index.md) | PO, nhà cung cấp |
 | IV | [Kho vận](../kho/index.md) | Nhập/xuất, tồn |
 | V | [Kế toán](../ke-toan/index.md) | Hóa đơn, thanh toán |
