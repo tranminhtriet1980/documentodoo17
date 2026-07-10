@@ -1,4 +1,4 @@
-# Đăng nhập và phân quyền
+# Đăng nhập
 
 ## Đăng nhập
 
@@ -16,25 +16,13 @@ Nếu tài khoản thuộc nhiều công ty, chọn công ty từ menu **avatar 
 
 Dữ liệu (đơn hàng, kho, sổ kế toán) **tách theo công ty** — luôn kiểm tra đúng công ty trước khi nhập liệu.
 
-## Nhóm quyền (User groups)
-
-Quản trị viên gán **nhóm quyền** cho từng người dùng. Ví dụ:
-
-| Nhóm | Quyền điển hình |
-|------|------------------|
-| **Sales / User** | Xem và tạo lead, báo giá của mình |
-| **Sales / Manager** | Toàn bộ pipeline, cấu hình team |
-| **Inventory / User** | Nhập/xuất kho |
-| **Accounting / Billing** | Tạo hóa đơn, không sửa sổ cái |
-| **Administrator** | Cài app, người dùng, toàn hệ thống |
-
-!!! note "Không thấy menu?"
-    Ứng dụng chưa được cài hoặc tài khoản chưa có nhóm quyền tương ứng. Liên hệ admin.
-
 ## Bảo mật cơ bản cho người dùng
 
 - Không chia sẻ mật khẩu
 - Đăng xuất khi dùng máy chung
 - Chỉ tải file đính kèm từ nguồn tin cậy trong Chatter
 
-Xem thêm: [Quản lý người dùng](../cai-dat/nguoi-dung.md) | [Quyền truy cập](../cai-dat/quyen-truy-cap.md)
+!!! info "Phân quyền chi tiết"
+    Nhóm quyền, record rules, cấu hình quyền theo model → xem **[Phân quyền kỹ thuật](../technical/bao-mat/quyen-ky-thuat.md)** (tab Kỹ Thuật) và **[Quyền truy cập](../cai-dat/quyen-truy-cap.md)** (Quản trị nghiệp vụ).
+
+Xem thêm: [Quản lý người dùng](../cai-dat/nguoi-dung.md)

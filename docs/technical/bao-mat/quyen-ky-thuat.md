@@ -1,5 +1,20 @@
 # Phân quyền kỹ thuật
 
+## Nhóm quyền theo nghiệp vụ
+
+Quản trị viên gán **nhóm quyền** cho từng người dùng. Một số nhóm điển hình:
+
+| Nhóm | Quyền điển hình |
+|------|------------------|
+| **Sales / User** | Xem và tạo lead, báo giá của mình |
+| **Sales / Manager** | Toàn bộ pipeline, cấu hình team |
+| **Inventory / User** | Nhập/xuất kho |
+| **Accounting / Billing** | Tạo hóa đơn, không sửa sổ cái |
+| **Administrator** | Cài app, người dùng, toàn hệ thống |
+
+!!! note "Không thấy menu?"
+    Ứng dụng chưa được cài hoặc tài khoản chưa có nhóm quyền tương ứng — kiểm tra nhóm quyền của user.
+
 ## Ba lớp bảo mật Odoo
 
 | Lớp | File / UI | Mô tả |

@@ -67,11 +67,11 @@ nav:
   - Trang chủ: index.md
 
   - "Hướng dẫn người dùng":
-      - huong-dan/index.md
+      - "Tổng quan": huong-dan/index.md
       - "I. Bắt đầu":
           - "1. Giới thiệu Odoo 17": gioi-thieu/odoo17.md
           - "2. Giao diện": gioi-thieu/giao-dien.md
-          - "3. Đăng nhập & phân quyền": gioi-thieu/dang-nhap-phan-quyen.md
+          - "3. Đăng nhập": gioi-thieu/dang-nhap-phan-quyen.md
       - "II. Bán hàng":
           - Tổng quan Bán hàng: ban-hang/index.md
           - "1. CRM":

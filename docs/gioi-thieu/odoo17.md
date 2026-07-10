@@ -52,5 +52,5 @@ Mỗi chức năng nghiệp vụ là một **ứng dụng** riêng. Vào **Cài 
 ## Bước tiếp theo
 
 1. [Làm quen giao diện](giao-dien.md)
-2. [Đăng nhập và phân quyền](dang-nhap-phan-quyen.md)
+2. [Đăng nhập](dang-nhap-phan-quyen.md)
 3. Chọn module bạn dùng hàng ngày từ menu trái tài liệu
