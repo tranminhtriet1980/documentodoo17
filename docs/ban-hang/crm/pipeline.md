@@ -1,7 +1,7 @@
 # Chương III — Pipeline (Cơ hội)
 
 !!! info "Nguồn tài liệu"
-    Functional / CRM / Opportunity Management — Phiên bản 1.0 (CRM VAN — *05_Opportunity_Pipeline_Process*).
+    Chức năng / CRM / Opportunity Management — Phiên bản 1.0 (CRM VAN — *05_Opportunity_Pipeline_Process*).
 
 ## Mục tiêu
 

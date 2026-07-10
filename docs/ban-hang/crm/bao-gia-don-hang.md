@@ -1,7 +1,7 @@
 # Báo giá, đơn bán hàng và hợp đồng
 
 !!! info "Nguồn tài liệu"
-    Functional / Sales — Phiên bản 1.0 (CRM VAN — *06_Quotation_Order_Contract_Process*).
+    Chức năng / Sales — Phiên bản 1.0 (CRM VAN — *06_Quotation_Order_Contract_Process*).
 
 ## Mục tiêu
 

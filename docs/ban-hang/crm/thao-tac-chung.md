@@ -1,7 +1,7 @@
 # Chương I — Thao tác chung
 
 !!! info "Nguồn tài liệu"
-    Functional / CRM — Phiên bản 1.0 (CRM VAN — *09_CRM_Common_Operations_Guide*).
+    Chức năng / CRM — Phiên bản 1.0 (CRM VAN — *09_CRM_Common_Operations_Guide*).
 
 ## Mục tiêu
 

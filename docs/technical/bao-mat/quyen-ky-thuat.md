@@ -32,4 +32,4 @@ Chỉ xem SO của mình:
 
 Code `record.sudo()` bỏ qua rules — chỉ dùng khi thật sự cần và đã kiểm tra logic.
 
-Phía nghiệp vụ: [Quyền truy cập](../../cai-dat/quyen-truy-cap.md) (Functional).
+Phía nghiệp vụ: [Quyền truy cập](../../cai-dat/quyen-truy-cap.md) (Chức năng).

@@ -1,5 +1,5 @@
 site_name: Tài liệu Odoo 17
-site_description: Tài liệu Odoo 17 tiếng Việt — Tính năng (Functional) & Kỹ thuật (Technical)
+site_description: Tài liệu Odoo 17 tiếng Việt — Hướng dẫn người dùng, Chức năng (đang phát triển) & Kỹ Thuật
 site_author: Edupath
 
 use_directory_urls: false
@@ -66,8 +66,8 @@ extra:
 nav:
   - Trang chủ: index.md
 
-  - "Tính năng (Functional)":
-      - functional/index.md
+  - "Hướng dẫn người dùng":
+      - huong-dan/index.md
       - "I. Bắt đầu":
           - "1. Giới thiệu Odoo 17": gioi-thieu/odoo17.md
           - "2. Giao diện": gioi-thieu/giao-dien.md
@@ -139,8 +139,26 @@ nav:
           - "3. Quyền truy cập": cai-dat/quyen-truy-cap.md
           - "4. Công ty": cai-dat/cong-ty.md
 
-  - "Kỹ thuật (Technical)":
-      - Tổng quan Kỹ thuật: technical/index.md
+  - "Chức năng":
+      - functional/index.md
+      - "Mẫu đặc tả chức năng": functional/mau-dac-ta-chuc-nang.md
+      - "CRM & Bán hàng":
+          - "2 · Edupath ERP — CRM & Hồ sơ dịch vụ": functional/lead-view.md
+      - "Marketing":
+          - "3 · Email Marketing Edupath": functional/edupath-email-marketing.md
+      - "Dự án & Hồ sơ":
+          - "4 · Dashboard Quản trị Hồ sơ": functional/edupath-project-dashboard.md
+      - "Kế toán & Tài chính":
+          - "5 · Quản lý Thanh toán": functional/fin-qlthanhtoan.md
+      - "Hỗ trợ nội bộ":
+          - "6 · Hỗ trợ CNTT (Service Desk)": functional/th-service-desk.md
+      - "Kho vận":
+          - "1 · Phiếu nhập/xuất kho Edupath": functional/edupath-stock.md
+      - "Dữ liệu nền":
+          - "7 · Bộ Danh Mục": functional/danhmuc.md
+
+  - "Kỹ Thuật":
+      - Tổng quan Kỹ Thuật: technical/index.md
       - "I. Tổng quan":
           - "1. Kiến trúc": technical/tong-quan/kien-truc.md
           - "2. Phiên bản": technical/tong-quan/phien-ban.md

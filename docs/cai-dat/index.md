@@ -1,8 +1,8 @@
-# Quản trị nghiệp vụ (Functional)
+# Quản trị nghiệp vụ (Chức năng)
 
-Phần dành cho **quản trị viên vận hành** cấu hình Odoo trên giao diện — thuộc tab **Tính năng (Functional)**.
+Phần dành cho **quản trị viên vận hành** cấu hình Odoo trên giao diện — thuộc tab **Hướng dẫn người dùng**.
 
-Cài server, database, module code → xem tab **[Kỹ thuật (Technical)](../technical/index.md)**.
+Cài server, database, module code → xem tab **[Kỹ Thuật](../technical/index.md)**.
 
 !!! danger "Quyền Administrator"
     Thay đổi sai có thể ảnh hưởng toàn bộ người dùng. Chỉ admin hoặc được ủy quyền mới thao tác.

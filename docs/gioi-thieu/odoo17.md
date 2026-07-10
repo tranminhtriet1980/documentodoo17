@@ -1,7 +1,7 @@
 # Giới thiệu Odoo 17
 
-!!! info "Thuộc phần Tính năng (Functional)"
-    Trang này dành cho **người dùng nghiệp vụ**. Hạ tầng & lập trình → tab **[Kỹ thuật (Technical)](../technical/index.md)**.
+!!! info "Thuộc phần Hướng dẫn người dùng"
+    Trang này dành cho **người dùng nghiệp vụ**. Hạ tầng & lập trình → tab **[Kỹ Thuật](../technical/index.md)**.
 
 **Odoo** là bộ phần mềm quản trị doanh nghiệp (ERP) gồm nhiều **ứng dụng** (app) có thể bật/tắt theo nhu cầu: Bán hàng, Mua hàng, Kho, Kế toán, Nhân sự, v.v.
 

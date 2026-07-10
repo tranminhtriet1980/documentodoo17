@@ -1,7 +1,7 @@
 # Chương II — Leads
 
 !!! info "Nguồn tài liệu"
-    Functional / CRM / Lead Management — CRM VAN (*ChuongII Lead.md*).
+    Chức năng / CRM / Lead Management — CRM VAN (*ChuongII Lead.md*).
 
 ## I. Giới thiệu
 

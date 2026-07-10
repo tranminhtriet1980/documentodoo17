@@ -1,7 +1,7 @@
 # Tạo Lead mới và đánh giá Qualified Lead
 
 !!! info "Nguồn tài liệu"
-    Functional / CRM / Lead Management — CRM VAN (*04_Create_Lead_And_Qualified_Lead*, *ChuongII Lead.md*). Tổng quan chương: [Chương II — Leads](chuong-ii-leads.md).
+    Chức năng / CRM / Lead Management — CRM VAN (*04_Create_Lead_And_Qualified_Lead*, *ChuongII Lead.md*). Tổng quan chương: [Chương II — Leads](chuong-ii-leads.md).
 
 ## Mục tiêu
 

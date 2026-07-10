@@ -26,7 +26,7 @@ Nhiều module:
 3. Chạy upgrade trên **staging**
 4. Kiểm tra custom module tương thích
 5. `-u all` hoặc từng module theo kế hoạch
-6. UAT nghiệp vụ (tab Functional)
+6. UAT nghiệp vụ (tab Chức năng)
 7. Cutover production có cửa sổ bảo trì
 
 !!! danger "`-u all` trên production"

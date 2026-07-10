@@ -38,4 +38,4 @@ env['sale.order'].search_count([])
 !!! danger
     Không bật debug trên production cho user thường — lộ cấu trúc hệ thống.
 
-Phía nghiệp vụ: [Quản trị ứng dụng](../../cai-dat/ung-dung.md) (Functional).
+Phía nghiệp vụ: [Quản trị ứng dụng](../../cai-dat/ung-dung.md) (Chức năng).

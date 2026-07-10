@@ -18,4 +18,4 @@ Module `sale_purchase_inter_company_rules` — SO bên A tạo PO bên B (cần 
 
 Mỗi công ty có chart of accounts, journal riêng — consolidated reporting cần module/accounting config.
 
-Phía người dùng: [Công ty & chi nhánh](../../cai-dat/cong-ty.md) (tab Functional).
+Phía người dùng: [Công ty & chi nhánh](../../cai-dat/cong-ty.md) (tab Chức năng).

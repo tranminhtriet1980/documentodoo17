@@ -1,4 +1,7 @@
-# Kỹ thuật (Technical)
+# Kỹ Thuật
+
+!!! info "Đối tượng: Developer"
+    Dành cho **Developer**. Tài liệu mô tả **kiến trúc kỹ thuật, cấu trúc dữ liệu, API, mô hình dữ liệu, mã nguồn** và các thành phần cần thiết để **phát triển, bảo trì hoặc mở rộng** hệ thống.
 
 Phần **Technical** dành cho **IT, quản trị hệ thống và developer**: triển khai, vận hành, database, module tùy chỉnh, tích hợp và bảo mật hạ tầng.
 
@@ -10,7 +13,7 @@ Phần **Technical** dành cho **IT, quản trị hệ thống và developer**: 
 
 ## Không nằm trong phần Technical
 
-Hướng dẫn *“bấm nút nào để tạo báo giá”*, *“phê duyệt nghỉ phép”* → tab **[Tính năng (Functional)](../functional/index.md)**.
+Hướng dẫn *“bấm nút nào để tạo báo giá”*, *“phê duyệt nghỉ phép”* → tab **[Hướng dẫn người dùng](../huong-dan/index.md)**. Đặc tả chức năng đang phát triển → tab **[Chức năng](../functional/index.md)**.
 
 ## Cấu trúc
 
@@ -25,7 +28,7 @@ Hướng dẫn *“bấm nút nào để tạo báo giá”*, *“phê duyệt n
 
 ```mermaid
 flowchart TB
-    subgraph functional [Tính năng - Functional]
+    subgraph functional [Hướng dẫn người dùng]
         U[Người dùng nghiệp vụ]
         P[Quy trình & màn hình Odoo]
     end
