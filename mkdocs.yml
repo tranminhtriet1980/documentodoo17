@@ -80,15 +80,15 @@ nav:
           - "2. Giao diện": gioi-thieu/giao-dien.md
           - "3. Đăng nhập": gioi-thieu/dang-nhap-phan-quyen.md
       - "II. CRM & Bán hàng":
-          - "Chương I: Thao tác chung": ban-hang/crm/thao-tac-chung.md
-          - "Chương II: Leads": ban-hang/crm/chuong-ii-leads.md
-          - "Chương III: Pipeline (Cơ hội)": ban-hang/crm/pipeline.md
-          - "Chương IV: Báo giá & Đơn bán":
+          - "1. Chương I: Thao tác chung": ban-hang/crm/thao-tac-chung.md
+          - "2. Chương II: Leads": ban-hang/crm/chuong-ii-leads.md
+          - "3. Chương III: Pipeline (Cơ hội)": ban-hang/crm/pipeline.md
+          - "4. Chương IV: Báo giá & Đơn bán":
               - "Tổng quan chương": ban-hang/crm/chuong-iv-sale-order.md
               - "Báo giá & đơn hàng": ban-hang/crm/bao-gia-don-hang.md
               - "Đơn bán": ban-hang/ban-hang/don-ban.md
               - "Hóa đơn khách hàng": ban-hang/ban-hang/hoa-don.md
-          - "Chương V: Báo cáo": ban-hang/crm/bao-cao.md
+          - "5. Chương V: Báo cáo": ban-hang/crm/bao-cao.md
       - "III. Kho vận (Tồn kho)":
           - Tổng quan Kho: kho/index.md
           - "1. Sản phẩm": kho/san-pham.md
