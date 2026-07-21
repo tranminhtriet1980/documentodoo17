@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="372" viewBox="0 0 1680 372">
+<defs>
+<marker id="emk-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif}.num{font-size:40px;font-weight:700}.st-title{font-size:16px;font-weight:700}.st-desc{font-size:12.5px;font-weight:400}</style>
+
+<!-- Header -->
+<text x="840" y="40" text-anchor="middle" dominant-baseline="middle" font-size="26" font-weight="700" fill="#0F172A">QUY TRÌNH SỬ DỤNG EMAIL MARKETING EDUPATH</text>
+<text x="840" y="67" text-anchor="middle" dominant-baseline="middle" font-size="13.5" font-weight="700" fill="#475569">6 bước: Cấu hình SMTP → Dựng danh sách → Gán tài khoản → Soạn Thư → Gửi → Theo dõi</text>
+
+<!-- Connecting arrows -->
+<line x1="233" y1="180" x2="380" y2="180" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#emk-arrow)"/>
+<line x1="500" y1="180" x2="647" y2="180" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#emk-arrow)"/>
+<line x1="767" y1="180" x2="913" y2="180" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#emk-arrow)"/>
+<line x1="1033" y1="180" x2="1180" y2="180" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#emk-arrow)"/>
+<line x1="1300" y1="180" x2="1447" y2="180" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#emk-arrow)"/>
+
+<!-- Step 1: Cấu hình SMTP -->
+<circle cx="173" cy="180" r="54" fill="#EAF2FF" stroke="#2563EB" stroke-width="3"/>
+<text class="num" x="173" y="182" text-anchor="middle" dominant-baseline="central" fill="#2563EB">1</text>
+<text class="st-title" x="173" y="266" text-anchor="middle" fill="#1E3A8A">Cấu hình SMTP riêng</text>
+<text class="st-desc" x="173" y="290" text-anchor="middle" fill="#475569">Tạo tài khoản gửi (host, port, From)</text>
+<text class="st-desc" x="173" y="309" text-anchor="middle" fill="#475569">Test SMTP · nhiều domain theo lĩnh vực</text>
+
+<!-- Step 2: Dựng Mailing List -->
+<circle cx="440" cy="180" r="54" fill="#E0F2FE" stroke="#0284C7" stroke-width="3"/>
+<text class="num" x="440" y="182" text-anchor="middle" dominant-baseline="central" fill="#0284C7">2</text>
+<text class="st-title" x="440" y="266" text-anchor="middle" fill="#075985">Dựng Mailing List</text>
+<text class="st-desc" x="440" y="290" text-anchor="middle" fill="#475569">Đồng bộ đăng ký sự kiện / chiến dịch</text>
+<text class="st-desc" x="440" y="309" text-anchor="middle" fill="#475569">hoặc lọc CRM bằng domain</text>
+
+<!-- Step 3: Gán tài khoản gửi -->
+<circle cx="707" cy="180" r="54" fill="#DCFCE7" stroke="#16A34A" stroke-width="3"/>
+<text class="num" x="707" y="182" text-anchor="middle" dominant-baseline="central" fill="#16A34A">3</text>
+<text class="st-title" x="707" y="266" text-anchor="middle" fill="#14532D">Gán tài khoản gửi</text>
+<text class="st-desc" x="707" y="290" text-anchor="middle" fill="#475569">Mỗi danh sách gắn 1 SMTP</text>
+<text class="st-desc" x="707" y="309" text-anchor="middle" fill="#475569">(không gắn → tài khoản mặc định)</text>
+
+<!-- Step 4: Soạn Thư -->
+<circle cx="973" cy="180" r="54" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+<text class="num" x="973" y="182" text-anchor="middle" dominant-baseline="central" fill="#EA580C">4</text>
+<text class="st-title" x="973" y="266" text-anchor="middle" fill="#9A3412">Soạn Thư</text>
+<text class="st-desc" x="973" y="290" text-anchor="middle" fill="#475569">Chèn biến người nhận · dán HTML thô</text>
+<text class="st-desc" x="973" y="309" text-anchor="middle" fill="#475569">Công khai ảnh nhúng</text>
+
+<!-- Step 5: Gửi thử & Gửi -->
+<circle cx="1240" cy="180" r="54" fill="#FCE7F3" stroke="#DB2777" stroke-width="3"/>
+<text class="num" x="1240" y="182" text-anchor="middle" dominant-baseline="central" fill="#DB2777">5</text>
+<text class="st-title" x="1240" y="266" text-anchor="middle" fill="#831843">Gửi thử &amp; Gửi</text>
+<text class="st-desc" x="1240" y="290" text-anchor="middle" fill="#475569">Gửi thử kiểm tra hiển thị</text>
+<text class="st-desc" x="1240" y="309" text-anchor="middle" fill="#475569">Gửi ngay / đưa vào hàng đợi</text>
+
+<!-- Step 6: Theo dõi -->
+<circle cx="1507" cy="180" r="54" fill="#EEF2FF" stroke="#4F46E5" stroke-width="3"/>
+<text class="num" x="1507" y="182" text-anchor="middle" dominant-baseline="central" fill="#4F46E5">6</text>
+<text class="st-title" x="1507" y="266" text-anchor="middle" fill="#3730A3">Theo dõi</text>
+<text class="st-desc" x="1507" y="290" text-anchor="middle" fill="#475569">Cron Edupath gửi qua SMTP riêng</text>
+<text class="st-desc" x="1507" y="309" text-anchor="middle" fill="#475569">Theo dõi mở / nhấp / bounce</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1010" viewBox="0 0 1200 1010">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<text x="600.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="800" fill="#1F2937">QUY TRÌNH XUẤT KHO — 6 BƯỚC</text>
+<text x="600.0" y="64" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#6B7280">Mỗi bước đúng người phụ trách mới bấm được; xong 6 bước mới Validate trừ tồn</text>
+<rect x="140.0" y="100" width="380" height="78" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="330.0" y="130.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#374151">Tạo phiếu xuất</text>
+<text x="330.0" y="147.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#374151">Chọn Người nhận + dòng SP</text>
+<rect x="140.0" y="208" width="380" height="78" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="330.0" y="238.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 1 · Gửi yêu cầu</text>
+<text x="330.0" y="255.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#9A3412">Người đề nghị · kiểm tra tồn</text>
+<line x1="330" y1="181" x2="330" y2="205" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="140.0" y="316" width="380" height="78" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="330.0" y="346.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 2 · Trưởng BP duyệt</text>
+<text x="330.0" y="363.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#9A3412">Trưởng phòng của người nhận</text>
+<line x1="330" y1="289" x2="330" y2="313" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="140.0" y="424" width="380" height="78" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="330.0" y="454.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 3 · BM duyệt</text>
+<text x="330.0" y="471.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#9A3412">BM chi nhánh (chủ trương)</text>
+<line x1="330" y1="397" x2="330" y2="421" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="140.0" y="532" width="380" height="78" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="330.0" y="562.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 4 · KTT duyệt</text>
+<text x="330.0" y="579.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#9A3412">KTT xuất · theo dõi kho</text>
+<line x1="330" y1="505" x2="330" y2="529" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="140.0" y="640" width="380" height="78" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="330.0" y="670.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 5 · Thủ kho chuẩn bị xong</text>
+<text x="330.0" y="687.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#9A3412">Thủ kho chi nhánh soạn hàng</text>
+<line x1="330" y1="613" x2="330" y2="637" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="140.0" y="748" width="380" height="78" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="330.0" y="778.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 6 · Đã nhận hàng</text>
+<text x="330.0" y="795.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#9A3412">Người nhận hàng xác nhận</text>
+<line x1="330" y1="721" x2="330" y2="745" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="140.0" y="856" width="380" height="78" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+<text x="330.0" y="886.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#14532D">Validate — trừ tồn</text>
+<text x="330.0" y="903.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">Thủ kho · chỉ khi Hoàn tất</text>
+<line x1="330" y1="829" x2="330" y2="853" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="660" y="150" width="470" height="120" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="895.0" y="184.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#78350F">Chặn xuất vượt tồn</text>
+<text x="895.0" y="201.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#78350F">Kiểm tồn khả dụng 3 thời điểm:</text>
+<text x="895.0" y="218.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#78350F">Gửi yêu cầu · Xác nhận · Validate</text>
+<text x="895.0" y="235.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#78350F">Không cho xuất âm kho</text>
+<rect x="660" y="320" width="470" height="120" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="895.0" y="354.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#334155">Đúng người mới bấm được</text>
+<text x="895.0" y="371.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#334155">B2 Trưởng BP · B3 BM · B4 KTT xuất</text>
+<text x="895.0" y="388.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#334155">B5 Thủ kho · B6 chính Người nhận</text>
+<text x="895.0" y="405.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#334155">Bấm sai bước → báo lỗi gợi ý bước</text>
+<rect x="660" y="490" width="470" height="130" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="895.0" y="529.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#075985">Thông tin giao hàng</text>
+<text x="895.0" y="546.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#075985">Người nhận · SĐT · Địa chỉ</text>
+<text x="895.0" y="563.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#075985">Hình thức: Nội bộ/Nhà xe/Chành/GHTK</text>
+<text x="895.0" y="580.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#075985">Trạng thái: Chờ giao→Đang→Đã giao</text>
+<rect x="660" y="670" width="470" height="120" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="895.0" y="704.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#14532D">Sau khi Validate</text>
+<text x="895.0" y="721.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">Trừ tồn kho tại vị trí nguồn</text>
+<text x="895.0" y="738.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">Trạng thái giao = Đã giao</text>
+<text x="895.0" y="755.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">Lên báo cáo Xuất kho theo kỳ</text>
+</svg>

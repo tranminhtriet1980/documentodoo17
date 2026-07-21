@@ -21,4 +21,4 @@ Sau confirm, tạo **Receipt** (phiếu nhập):
 !!! tip "3-way matching"
     So khớp PO – Receipt – Bill trước khi thanh toán (best practice).
 
-Xem: [Nhận hàng](nhan-hang.md) | [Kế toán](../ke-toan/hoa-don.md)
+Xem: [Nhận hàng](nhan-hang.md) | [Thanh toán NCC (Kế toán)](../ke-toan/thanh-toan-ncc.md)

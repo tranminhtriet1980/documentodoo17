@@ -7,7 +7,12 @@ use_directory_urls: false
 theme:
   name: material
   language: vi
-  # Không dùng logo hình (Material icon / Odoo) — chỉ chữ tiêu đề trên header
+  # Logo EduPath trên header + favicon (SVG trong docs/assets)
+  logo: assets/edupath-logo.svg
+  favicon: assets/edupath-mark.svg
+  font:
+    text: Be Vietnam Pro
+    code: Roboto Mono
   features:
     - navigation.tabs
     - navigation.sections
@@ -19,14 +24,14 @@ theme:
     - toc.follow
   palette:
     - scheme: default
-      primary: deep purple
-      accent: deep orange
+      primary: red
+      accent: red
       toggle:
         icon: material/brightness-4
         name: Chế độ tối
     - scheme: slate
-      primary: deep purple
-      accent: deep orange
+      primary: red
+      accent: red
       toggle:
         icon: material/brightness-7
         name: Chế độ sáng
@@ -54,10 +59,12 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/ai-assistant.css
 
 extra_javascript:
   - javascripts/protect-content.js
   - javascripts/technical-home-redirect.js
+  - javascripts/ai-assistant.js
 
 extra:
   social: []
@@ -82,60 +89,29 @@ nav:
               - "Đơn bán": ban-hang/ban-hang/don-ban.md
               - "Hóa đơn khách hàng": ban-hang/ban-hang/hoa-don.md
           - "Chương V: Báo cáo": ban-hang/crm/bao-cao.md
-      - "III. Mua hàng":
-          - Tổng quan Mua hàng: mua-hang/index.md
-          - "1. Nhà cung cấp": mua-hang/nha-cung-cap.md
-          - "2. Đơn mua": mua-hang/don-mua.md
-          - "3. Nhận hàng": mua-hang/nhan-hang.md
-      - "IV. Kho vận (Tồn kho)":
+      - "III. Kho vận (Tồn kho)":
           - Tổng quan Kho: kho/index.md
           - "1. Sản phẩm": kho/san-pham.md
           - "2. Nhập kho": kho/nhap-kho.md
           - "3. Xuất kho": kho/xuat-kho.md
           - "4. Tồn kho": kho/ton-kho.md
           - "5. Kiểm kê": kho/kiem-ke.md
-      - "V. Kế toán":
+      - "IV. Kế toán":
           - Tổng quan Kế toán: ke-toan/index.md
-          - "1. Quy trình nghiệp vụ": ke-toan/quy-trinh-nghiep-vu.md
-          - "2. Quy trình (hình ảnh)": ke-toan/quy-trinh-hinh-anh.md
-          - "3. Hóa đơn": ke-toan/hoa-don.md
-          - "4. Thanh toán": ke-toan/thanh-toan.md
-          - "5. Sổ cái": ke-toan/so-cai.md
-          - "6. Báo cáo": ke-toan/bao-cao.md
-      - "VI. Nhân sự":
-          - Tổng quan Nhân sự: nhan-su/index.md
-          - "1. Nhân viên": nhan-su/nhan-vien.md
-          - "2. Chấm công": nhan-su/cham-cong.md
-          - "3. Nghỉ phép": nhan-su/nghi-phep.md
-          - "4. Tuyển dụng": nhan-su/tuyen-dung.md
-      - "VII. Dự án":
+          - "1. Ghi nhận doanh thu – Thu tiền khách hàng": ke-toan/ghi-nhan-doanh-thu.md
+          - "2. Chi phí / mua hàng – Thanh toán NCC": ke-toan/thanh-toan-ncc.md
+          - "3. Đề xuất thanh toán": ke-toan/de-xuat-thanh-toan.md
+          - "4. Bút toán tổng hợp – không hóa đơn": ke-toan/but-toan-tong-hop.md
+      - "V. Dự án":
           - Tổng quan Dự án: du-an/index.md
           - "1. Quy trình XLHS": du-an/quy-trinh-xlhs.md
           - "2. Phụ lục hình ảnh XLHS": du-an/phu-luc-hinh-anh.md
           - "3. Nhiệm vụ": du-an/nhiem-vu.md
           - "4. Timesheet": du-an/timesheet.md
-      - "VIII. Website":
-          - Tổng quan Website: website/index.md
-          - "1. Trang web": website/trang-web.md
-          - "2. Cửa hàng online": website/cua-hang.md
-      - "IX. Marketing":
+      - "VI. Marketing":
           - Tổng quan Marketing: marketing/index.md
           - "1. Email marketing": marketing/email.md
           - "2. Sự kiện": marketing/su-kien.md
-      - "X. Sản xuất":
-          - Tổng quan Sản xuất: san-xuat/index.md
-          - "1. BOM": san-xuat/bom.md
-          - "2. Lệnh sản xuất": san-xuat/lenh-san-xuat.md
-      - "XI. Năng suất":
-          - Tổng quan Năng suất: productivity/index.md
-          - "1. Thảo luận": productivity/thao-luan.md
-          - "2. Lịch & cuộc họp": productivity/lich-cuoc-hop.md
-      - "XII. Quản trị nghiệp vụ":
-          - Tổng quan Cài đặt: cai-dat/index.md
-          - "1. Ứng dụng": cai-dat/ung-dung.md
-          - "2. Người dùng": cai-dat/nguoi-dung.md
-          - "3. Quyền truy cập": cai-dat/quyen-truy-cap.md
-          - "4. Công ty": cai-dat/cong-ty.md
 
   - "Chức năng":
       - functional/index.md

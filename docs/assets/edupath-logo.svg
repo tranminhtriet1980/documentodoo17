@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 92" role="img" aria-label="EduPath">
+  <title>EduPath</title>
+  <!-- Dau hieu (mark): vong tron do + mui ten "play" — thay bang logo chinh thuc neu can -->
+  <circle cx="46" cy="46" r="31" fill="none" stroke="#E1251B" stroke-width="13"/>
+  <path d="M40 30 L40 62 L64 46 Z" fill="#E1251B"/>
+  <!-- Chu EduPath -->
+  <text x="92" y="61" font-family="'Be Vietnam Pro','Segoe UI',Arial,sans-serif" font-size="45" font-weight="800" letter-spacing="-1.5">
+    <tspan fill="#E1251B">Edu</tspan><tspan fill="#20296B">Path</tspan>
+  </text>
+</svg>

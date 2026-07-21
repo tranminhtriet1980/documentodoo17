@@ -18,4 +18,4 @@
 
 **Kế toán › Khách hàng › Hóa đơn** → **Send & Print**
 
-Chi tiết kế toán: [Hóa đơn khách hàng](../../ke-toan/hoa-don.md)
+Chi tiết kế toán: [Ghi nhận doanh thu – Thu tiền khách hàng](../../ke-toan/ghi-nhan-doanh-thu.md)

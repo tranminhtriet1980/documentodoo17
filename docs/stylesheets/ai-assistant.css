@@ -1,0 +1,471 @@
+/* ============================================================
+   AI Assistant — chatbot tra loi cau hoi tai lieu (goc duoi phai)
+   Mau nen do EduPath + logo dinh kem.
+   ============================================================ */
+
+:root {
+  /* Đỏ EduPath đã làm dịu — bớt chói */
+  --ai-red: #df4b43;
+  --ai-red-dark: #c0392b;
+  --ai-red-deep: #a5352d;
+  --ai-navy: #20296b;
+  --ai-panel-bg: #ffffff;
+  --ai-panel-fg: #1f2330;
+  --ai-bot-bubble: #fceceb;
+  --ai-user-bubble: #df4b43;
+  --ai-border: #f2dad8;
+  --ai-muted: #6b7280;
+  --ai-shadow: 0 18px 48px rgba(165, 53, 45, 0.26), 0 4px 14px rgba(0, 0, 0, 0.14);
+}
+
+[data-md-color-scheme="slate"] {
+  --ai-panel-bg: #22212b;
+  --ai-panel-fg: #eceded;
+  --ai-bot-bubble: #33232a;
+  --ai-user-bubble: #df4b43;
+  --ai-border: #4a3238;
+  --ai-muted: #b3b3bd;
+  --ai-shadow: 0 18px 48px rgba(0, 0, 0, 0.55), 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Nut noi (FAB) goc duoi phai --- */
+.ai-fab {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px 10px 12px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--ai-red) 0%, var(--ai-red-deep) 100%);
+  color: #fff;
+  font-family: var(--md-text-font-family, "Be Vietnam Pro", "Segoe UI", sans-serif);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  box-shadow: var(--ai-shadow);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.ai-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 54px rgba(165, 18, 23, 0.4), 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.ai-fab:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+/* --- Vòng sáng chạy quanh nút chat cho sinh động --- */
+@property --ai-ring-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.ai-fab::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--ai-ring-angle, 0deg),
+    rgba(255, 255, 255, 0) 0deg,
+    rgba(255, 255, 255, 0) 205deg,
+    rgba(255, 224, 138, 0.85) 265deg,
+    #ffffff 305deg,
+    rgba(255, 224, 138, 0.85) 348deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+  filter: blur(0.4px);
+  animation: ai-fab-ring 2.6s linear infinite;
+}
+
+/* Quầng sáng mờ nhấp nháy nhẹ phía sau — thêm chiều sâu */
+.ai-fab::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  z-index: -2;
+  box-shadow: 0 0 0 0 rgba(255, 210, 120, 0.55);
+  animation: ai-fab-glow 2.6s ease-in-out infinite;
+}
+
+@keyframes ai-fab-ring {
+  to {
+    --ai-ring-angle: 360deg;
+  }
+}
+
+@keyframes ai-fab-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 6px 1px rgba(255, 200, 110, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 14px 3px rgba(255, 210, 120, 0.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-fab::before,
+  .ai-fab::after {
+    animation: none;
+  }
+}
+
+.ai-fab__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  flex: 0 0 auto;
+}
+
+.ai-fab__badge img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  pointer-events: none;
+}
+
+.ai-fab__label {
+  white-space: nowrap;
+}
+
+.ai-fab[hidden] {
+  display: none;
+}
+
+/* --- Khung chat --- */
+.ai-panel {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1001;
+  width: min(390px, calc(100vw - 32px));
+  height: min(620px, calc(100vh - 40px));
+  display: flex;
+  flex-direction: column;
+  background: var(--ai-panel-bg);
+  color: var(--ai-panel-fg);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--ai-shadow);
+  font-family: var(--md-text-font-family, "Be Vietnam Pro", "Segoe UI", sans-serif);
+  transform-origin: bottom right;
+  animation: ai-pop 0.2s ease;
+}
+
+@keyframes ai-pop {
+  from { opacity: 0; transform: translateY(12px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.ai-panel[hidden] {
+  display: none;
+}
+
+/* Header do */
+.ai-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: linear-gradient(135deg, var(--ai-red) 0%, var(--ai-red-deep) 100%);
+  color: #fff;
+}
+
+.ai-header__logo {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 7px;
+  padding: 4px 8px;
+  flex: 0 0 auto;
+}
+
+.ai-header__logo img {
+  height: 20px;
+  width: auto;
+  display: block;
+  pointer-events: none;
+}
+
+.ai-header__titles {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ai-header__title {
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.ai-header__subtitle {
+  font-size: 0.72rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.ai-header__close {
+  background: rgba(255, 255, 255, 0.16);
+  border: none;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  flex: 0 0 auto;
+  transition: background 0.15s ease;
+}
+
+.ai-header__close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Vung tin nhan */
+.ai-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ai-red) transparent;
+}
+
+.ai-body::-webkit-scrollbar { width: 8px; }
+.ai-body::-webkit-scrollbar-thumb {
+  background: rgba(225, 37, 27, 0.4);
+  border-radius: 4px;
+}
+
+.ai-msg {
+  max-width: 88%;
+  padding: 10px 13px;
+  border-radius: 14px;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.ai-msg--bot {
+  align-self: flex-start;
+  background: var(--ai-bot-bubble);
+  border: 1px solid var(--ai-border);
+  border-bottom-left-radius: 4px;
+}
+
+.ai-msg--user {
+  align-self: flex-end;
+  background: var(--ai-user-bubble);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.ai-msg p { margin: 0 0 6px; }
+.ai-msg p:last-child { margin-bottom: 0; }
+.ai-msg mark {
+  background: #ffe08a;
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+/* Danh sach ket qua co the click */
+.ai-results {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 8px;
+}
+
+.ai-result {
+  display: block;
+  padding: 8px 11px;
+  border-radius: 10px;
+  background: var(--ai-panel-bg);
+  border: 1px solid var(--ai-border);
+  text-decoration: none !important;
+  color: var(--ai-panel-fg) !important;
+  transition: border-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+}
+
+.ai-result:hover {
+  border-color: var(--ai-red);
+  transform: translateX(2px);
+  box-shadow: 0 3px 10px rgba(225, 37, 27, 0.14);
+}
+
+.ai-result__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--ai-red-dark);
+}
+
+[data-md-color-scheme="slate"] .ai-result__title {
+  color: #ff7a70;
+}
+
+.ai-result__title::before {
+  content: "📄";
+  font-size: 0.85rem;
+}
+
+.ai-result__crumb {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.72rem;
+  color: var(--ai-muted);
+}
+
+/* Goi y cau hoi (chips) */
+.ai-suggests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.ai-chip {
+  border: 1px solid var(--ai-red);
+  background: transparent;
+  color: var(--ai-red-dark);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.ai-chip:hover {
+  background: var(--ai-red);
+  color: #fff;
+}
+
+[data-md-color-scheme="slate"] .ai-chip {
+  color: #ff8a80;
+  border-color: #ff8a80;
+}
+
+[data-md-color-scheme="slate"] .ai-chip:hover {
+  background: #ff8a80;
+  color: #22212b;
+}
+
+/* Trang thai "dang go" */
+.ai-typing {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.ai-typing span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ai-red);
+  opacity: 0.5;
+  animation: ai-blink 1s infinite;
+}
+
+.ai-typing span:nth-child(2) { animation-delay: 0.2s; }
+.ai-typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes ai-blink {
+  0%, 100% { opacity: 0.25; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-2px); }
+}
+
+/* O nhap lieu */
+.ai-input {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--ai-border);
+  background: var(--ai-panel-bg);
+}
+
+.ai-input textarea {
+  flex: 1 1 auto;
+  resize: none;
+  border: 1px solid var(--ai-border);
+  border-radius: 12px;
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  max-height: 96px;
+  color: var(--ai-panel-fg);
+  background: var(--md-default-bg-color, #fff);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.ai-input textarea:focus {
+  border-color: var(--ai-red);
+}
+
+.ai-send {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: var(--ai-red);
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.ai-send:hover { background: var(--ai-red-dark); transform: scale(1.05); }
+.ai-send:disabled { opacity: 0.5; cursor: default; transform: none; }
+.ai-send svg { width: 20px; height: 20px; fill: currentColor; }
+
+.ai-footnote {
+  text-align: center;
+  font-size: 0.68rem;
+  color: var(--ai-muted);
+  padding: 0 12px 8px;
+  background: var(--ai-panel-bg);
+}
+
+/* Man hinh nho: chat gan full */
+@media (max-width: 480px) {
+  .ai-panel {
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    width: auto;
+    height: min(80vh, calc(100vh - 20px));
+  }
+  .ai-fab { right: 14px; bottom: 14px; }
+  .ai-fab__label { display: none; }
+  .ai-fab { padding: 12px; }
+}

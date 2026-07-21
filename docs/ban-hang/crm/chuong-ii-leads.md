@@ -14,7 +14,7 @@ Hướng dẫn TVV **nhận Lead mới**, **tạo Lead** khi khách chưa có tr
 
 ### Sơ đồ tổng quan
 
-![Sơ đồ quy trình Lead đến Cơ hội](images/lead-process/crm-lead-to-opportunity-tree.svg){ .doc-screenshot }
+![Sơ đồ quy trình Lead đến Cơ hội](images/lead-process/crm-lead-to-opportunity-tree.svg){ .doc-screenshot-full }
 
 ```text
 Lead vào CRM hoặc TVV tạo Lead mới

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1100" viewBox="0 0 1360 1100">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<text x="680.0" y="44" text-anchor="middle" dominant-baseline="middle" font-size="24" font-weight="800" fill="#1F2937">QUY TRÌNH KHO VẬN EDUPATH</text>
+<text x="680.0" y="68" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#6B7280">Nhập kho (duyệt KTT) · Xuất kho (6 bước phê duyệt) · Luân chuyển nội bộ — nút xanh lá là Validate cộng/trừ tồn</text>
+<text x="180" y="92" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="800" fill="#2563EB">NHẬP KHO</text>
+<text x="180" y="110" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#2563EB">2 bước duyệt + Validate</text>
+<text x="680" y="92" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="800" fill="#EA580C">XUẤT KHO</text>
+<text x="680" y="110" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#EA580C">6 bước phê duyệt + Validate</text>
+<text x="1180" y="92" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="800" fill="#0284C7">LUÂN CHUYỂN NỘI BỘ</text>
+<text x="1180" y="110" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#0284C7">→ chuyển sang phiếu nhập</text>
+<rect x="40.0" y="120" width="280" height="82" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="180" y="144" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#374151">Lập phiếu nháp</text>
+<text x="180" y="164" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#374151">Thủ kho tạo phiếu, thêm dòng SP</text>
+<line x1="180" y1="204" x2="180" y2="240" stroke="#2563EB" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40.0" y="242" width="280" height="82" rx="10" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="180" y="266" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#1E3A8A">Bước 1 · Gửi KTT phê duyệt</text>
+<text x="180" y="286" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#1E3A8A">Nháp → Chờ KTT (tự xác nhận)</text>
+<line x1="180" y1="326" x2="180" y2="362" stroke="#2563EB" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40.0" y="364" width="280" height="82" rx="10" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="180" y="388" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#1E3A8A">Bước 2 · KTT phê duyệt</text>
+<text x="180" y="408" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#1E3A8A">Chờ KTT → Đã duyệt · KTT nhập</text>
+<line x1="180" y1="448" x2="180" y2="484" stroke="#2563EB" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40.0" y="486" width="280" height="82" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+<text x="180" y="510" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#14532D">Validate — cộng tồn</text>
+<text x="180" y="530" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#14532D">Thủ kho · chỉ khi Đã duyệt</text>
+<rect x="540.0" y="120" width="280" height="82" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="680" y="144" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#374151">Tạo phiếu xuất</text>
+<text x="680" y="164" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#374151">Chọn Người nhận + dòng SP</text>
+<line x1="680" y1="204" x2="680" y2="240" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="540.0" y="242" width="280" height="82" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="680" y="266" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 1 · Gửi yêu cầu</text>
+<text x="680" y="286" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#9A3412">Người đề nghị · kiểm tra tồn</text>
+<line x1="680" y1="326" x2="680" y2="362" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="540.0" y="364" width="280" height="82" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="680" y="388" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 2 · Trưởng BP duyệt</text>
+<text x="680" y="408" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#9A3412">Trưởng phòng của người nhận</text>
+<line x1="680" y1="448" x2="680" y2="484" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="540.0" y="486" width="280" height="82" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="680" y="510" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 3 · BM duyệt</text>
+<text x="680" y="530" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#9A3412">BM chi nhánh (chủ trương)</text>
+<line x1="680" y1="570" x2="680" y2="606" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="540.0" y="608" width="280" height="82" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="680" y="632" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 4 · KTT duyệt</text>
+<text x="680" y="652" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#9A3412">KTT xuất · theo dõi kho</text>
+<line x1="680" y1="692" x2="680" y2="728" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="540.0" y="730" width="280" height="82" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="680" y="754" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 5 · Thủ kho chuẩn bị xong</text>
+<text x="680" y="774" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#9A3412">Thủ kho chi nhánh soạn hàng</text>
+<line x1="680" y1="814" x2="680" y2="850" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="540.0" y="852" width="280" height="82" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="680" y="876" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Bước 6 · Đã nhận hàng</text>
+<text x="680" y="896" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#9A3412">Người nhận hàng xác nhận</text>
+<line x1="680" y1="936" x2="680" y2="972" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="540.0" y="974" width="280" height="82" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+<text x="680" y="998" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#14532D">Validate — trừ tồn</text>
+<text x="680" y="1018" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#14532D">Thủ kho · chỉ khi Hoàn tất</text>
+<rect x="1040.0" y="120" width="280" height="82" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+<text x="1180" y="144" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#075985">Luân chuyển nội bộ</text>
+<text x="1180" y="164" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#075985">Chuyển hàng kho A → kho B</text>
+<line x1="1180" y1="204" x2="1180" y2="240" stroke="#0284C7" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="1040.0" y="242" width="280" height="82" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+<text x="1180" y="266" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#075985">Thông báo / Tạo phiếu nhập</text>
+<text x="1180" y="286" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#075985">Báo đơn vị nhận lập phiếu nhập</text>
+<line x1="1180" y1="326" x2="1180" y2="362" stroke="#0284C7" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="1040.0" y="364" width="280" height="82" rx="10" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="1180" y="388" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#1E3A8A">Phiếu nhập kho (kho B)</text>
+<text x="1180" y="408" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#1E3A8A">Chép dòng SP, liên kết phiếu gốc</text>
+<line x1="1180" y1="448" x2="1180" y2="484" stroke="#0284C7" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="1040.0" y="486" width="280" height="82" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="1180" y="510" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#14532D">→ Vào quy trình Nhập kho</text>
+<text x="1180" y="530" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#14532D">Duyệt KTT → Validate cộng tồn</text>
+<rect x="40.0" y="600" width="280" height="190" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="180" y="624" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="800" fill="#334155">Quy ước màu</text>
+<rect x="58.0" y="645" width="16" height="16" rx="3" fill="#6B7280"/>
+<text x="82.0" y="654" text-anchor="start" dominant-baseline="middle" font-size="12" font-weight="700" fill="#334155">Xám: điểm bắt đầu (soạn phiếu)</text>
+<rect x="58.0" y="672" width="16" height="16" rx="3" fill="#2563EB"/>
+<text x="82.0" y="681" text-anchor="start" dominant-baseline="middle" font-size="12" font-weight="700" fill="#334155">Xanh dương: Nhập kho — duyệt KTT</text>
+<rect x="58.0" y="699" width="16" height="16" rx="3" fill="#EA580C"/>
+<text x="82.0" y="708" text-anchor="start" dominant-baseline="middle" font-size="12" font-weight="700" fill="#334155">Cam: Xuất kho — 6 bước duyệt</text>
+<rect x="58.0" y="726" width="16" height="16" rx="3" fill="#0284C7"/>
+<text x="82.0" y="735" text-anchor="start" dominant-baseline="middle" font-size="12" font-weight="700" fill="#334155">Xanh ngọc: Luân chuyển nội bộ</text>
+<rect x="58.0" y="753" width="16" height="16" rx="3" fill="#16A34A"/>
+<text x="82.0" y="762" text-anchor="start" dominant-baseline="middle" font-size="12" font-weight="700" fill="#334155">Xanh lá: Validate cộng / trừ tồn</text>
+<rect x="40.0" y="812" width="280" height="118" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="180" y="836" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#374151">Kiểm kê tồn kho</text>
+<text x="180" y="856" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#374151">Dùng Điều chỉnh tồn chuẩn Odoo</text>
+<text x="180" y="872" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#374151">Không qua duyệt KTT / 6 bước</text>
+<text x="180" y="888" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#374151">Không bị chặn thiếu tồn</text>
+<rect x="1040.0" y="600" width="280" height="118" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="1180" y="624" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#78350F">Chặn xuất vượt tồn</text>
+<text x="1180" y="644" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#78350F">Kiểm tồn khả dụng 3 thời điểm:</text>
+<text x="1180" y="660" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#78350F">Gửi yêu cầu · Xác nhận · Validate</text>
+<text x="1180" y="676" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#78350F">Không cho xuất âm kho</text>
+<rect x="1040.0" y="772" width="280" height="118" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="1180" y="796" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#075985">Báo cáo kho theo kỳ</text>
+<text x="1180" y="816" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#075985">Tồn kho · Nhập kho · Xuất kho</text>
+<text x="1180" y="832" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#075985">Theo ngày · tháng · năm</text>
+<text x="1180" y="848" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#075985">Danh sách + Pivot, có Mã SP</text>
+</svg>

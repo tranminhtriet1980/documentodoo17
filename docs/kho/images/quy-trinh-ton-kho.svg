@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="470" viewBox="0 0 1240 470">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<text x="620.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="800" fill="#1F2937">QUY TRÌNH XEM TỒN &amp; BÁO CÁO KHO</text>
+<text x="620.0" y="64" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#6B7280">Chốt tồn / thống kê từ các giao dịch kho đã hoàn thành, theo kỳ Ngày · Tháng · Năm</text>
+<rect x="40" y="175" width="250" height="96" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="165.0" y="206.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#374151">Giao dịch kho đã Validate</text>
+<text x="165.0" y="223.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#374151">Nhập / Xuất hoàn thành</text>
+<text x="165.0" y="240.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#374151">move line trạng thái done</text>
+<rect x="360" y="175" width="220" height="96" rx="10" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="470.0" y="206.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#1E3A8A">Chọn kỳ báo cáo</text>
+<text x="470.0" y="223.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#1E3A8A">Theo Ngày</text>
+<text x="470.0" y="240.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#1E3A8A">Theo Tháng / Theo Năm</text>
+<rect x="650" y="70" width="250" height="80" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+<text x="775.0" y="101.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#075985">Báo cáo Tồn kho</text>
+<text x="775.0" y="118.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#075985">Chốt tồn đến thời điểm</text>
+<rect x="650" y="180" width="250" height="80" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="775.0" y="211.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Báo cáo Nhập kho</text>
+<text x="775.0" y="228.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#9A3412">Dòng nhập trong kỳ</text>
+<rect x="650" y="290" width="250" height="80" rx="10" fill="#FFEDD5" stroke="#EA580C" stroke-width="2"/>
+<text x="775.0" y="321.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#9A3412">Báo cáo Xuất kho</text>
+<text x="775.0" y="338.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#9A3412">Dòng xuất trong kỳ</text>
+<rect x="970" y="165" width="230" height="110" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+<text x="1085.0" y="194.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#14532D">Danh sách + Pivot</text>
+<text x="1085.0" y="211.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">Có cột Mã SP</text>
+<text x="1085.0" y="228.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">Nhóm &amp; tổng số lượng</text>
+<text x="1085.0" y="245.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">Xuất/đối chiếu</text>
+<line x1="294" y1="223" x2="356" y2="223" stroke="#6B7280" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="584,223 615,223 615,110 646,110" fill="none" stroke="#0284C7" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="584" y1="223" x2="646" y2="220" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="584,223 615,223 615,330 646,330" fill="none" stroke="#EA580C" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="904,110 940,110 940,200 966,200" fill="none" stroke="#16A34A" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="904" y1="220" x2="966" y2="220" stroke="#16A34A" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="904,330 940,330 940,240 966,240" fill="none" stroke="#16A34A" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="320" width="560" height="110" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="320.0" y="349.5" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700" fill="#334155">Cách tính tồn chốt</text>
+<text x="320.0" y="366.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#334155">Tồn chốt = Σ (nhập vào − xuất khỏi) vị trí nội bộ</text>
+<text x="320.0" y="383.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#334155">tính đến thời điểm chốt, chỉ move line "done".</text>
+<text x="320.0" y="400.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#334155">Xem tồn hiện tại: nút "Hiện có" trên sản phẩm.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<text x="600.0" y="40" text-anchor="middle" dominant-baseline="middle" font-size="22" font-weight="800" fill="#1F2937">QUY TRÌNH NHẬP KHO</text>
+<text x="600.0" y="64" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#6B7280">Mọi phiếu nhập phải qua KTT nhập duyệt mới được Validate cộng tồn</text>
+<rect x="34.0" y="110" width="250" height="96" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="159.0" y="149.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#374151">Lập phiếu nháp</text>
+<text x="159.0" y="166.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#374151">Thủ kho · thêm dòng SP</text>
+<rect x="328.0" y="110" width="250" height="96" rx="10" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="453.0" y="141.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#1E3A8A">Bước 1 · Gửi KTT phê duyệt</text>
+<text x="453.0" y="158.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#1E3A8A">Nháp → Chờ KTT</text>
+<text x="453.0" y="175.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#1E3A8A">(phiếu tự xác nhận)</text>
+<line x1="288.0" y1="158.0" x2="324.0" y2="158.0" stroke="#2563EB" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="622.0" y="110" width="250" height="96" rx="10" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+<text x="747.0" y="141.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#1E3A8A">Bước 2 · KTT phê duyệt</text>
+<text x="747.0" y="158.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#1E3A8A">Chờ KTT → Đã duyệt</text>
+<text x="747.0" y="175.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#1E3A8A">KTT nhập</text>
+<line x1="582.0" y1="158.0" x2="618.0" y2="158.0" stroke="#2563EB" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="916.0" y="110" width="250" height="96" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+<text x="1041.0" y="141.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#14532D">Validate — cộng tồn</text>
+<text x="1041.0" y="158.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">Thủ kho</text>
+<text x="1041.0" y="175.0" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#14532D">chỉ khi Đã duyệt</text>
+<line x1="876.0" y1="158.0" x2="912.0" y2="158.0" stroke="#2563EB" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="34.0" y="240" width="1132" height="62" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="600.0" y="262.5" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700" fill="#78350F">Chặn Validate khi chưa duyệt</text>
+<text x="600.0" y="279.5" text-anchor="middle" dominant-baseline="middle" font-size="11" font-weight="700" fill="#78350F">Bấm Validate lúc phiếu chưa "Đã duyệt" → báo lỗi. Luân chuyển nội bộ cũng sinh phiếu nhập đi qua duyệt KTT.</text>
+</svg>

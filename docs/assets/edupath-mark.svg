@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="EduPath">
+  <title>EduPath</title>
+  <circle cx="50" cy="50" r="34" fill="none" stroke="#E1251B" stroke-width="15"/>
+  <path d="M41 31 L41 69 L71 50 Z" fill="#E1251B"/>
+</svg>
