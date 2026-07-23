@@ -21,6 +21,7 @@ RUN apk add --no-cache openssl python3 \
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY deploy/technical-401.html /usr/share/nginx/html/technical-401.html
+COPY deploy/functional-401.html /usr/share/nginx/html/functional-401.html
 
 WORKDIR /build
 COPY scripts/generate_htpasswd.py ./scripts/

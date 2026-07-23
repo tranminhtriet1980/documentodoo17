@@ -1,5 +1,5 @@
 /**
- * Huy dang nhap muc Ky thuat (Cancel) -> ve trang chu.
+ * Huy dang nhap muc bao ve (Ky thuat / Chuc nang) (Cancel) -> ve trang chu.
  * Bo sung nginx 401 redirect; xu ly tab Material / fetch 401.
  */
 (function () {
@@ -20,11 +20,18 @@
     window.location.replace(homeUrl());
   }
 
-  var path = (window.location.pathname || "").replace(/\\/g, "/");
-  var onTechnical =
-    path.indexOf("/technical/") !== -1 || /\/technical(\/index)?\.html$/i.test(path);
+  function isProtected(p) {
+    return (
+      p.indexOf("/technical/") !== -1 ||
+      /\/technical(\/index)?\.html$/i.test(p) ||
+      p.indexOf("/functional/") !== -1 ||
+      /\/functional(\/index)?\.html$/i.test(p)
+    );
+  }
 
-  if (onTechnical) {
+  var path = (window.location.pathname || "").replace(/\\/g, "/");
+
+  if (isProtected(path)) {
     fetch(window.location.href, {
       method: "HEAD",
       credentials: "same-origin",
@@ -48,7 +55,7 @@
         return;
       }
       var href = link.getAttribute("href") || "";
-      if (href.indexOf("technical") === -1) {
+      if (href.indexOf("technical") === -1 && href.indexOf("functional") === -1) {
         return;
       }
       /* Cho trinh duyet mo hop dang nhap; neu 401 sau Cancel thi nginx/JS redirect */
@@ -59,7 +66,7 @@
   if (typeof document$ !== "undefined" && document$.subscribe) {
     document$.subscribe(function () {
       var p = (window.location.pathname || "").replace(/\\/g, "/");
-      if (p.indexOf("/technical/") === -1 && !/\/technical(\/index)?\.html$/i.test(p)) {
+      if (!isProtected(p)) {
         return;
       }
       fetch(window.location.href, {

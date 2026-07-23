@@ -1,15 +1,41 @@
 /**
- * Lớp bổ sung: che nội dung Kỹ thuật khi mở file trực tiếp (file://)
- * hoặc server không có Basic Auth. Không thay thế xác thực phía server.
+ * Lớp bổ sung: che nội dung mục bảo vệ (Kỹ thuật, Chức năng) khi mở file
+ * trực tiếp (file://) hoặc server không có Basic Auth.
+ * Không thay thế xác thực phía server (nginx Basic Auth mới là khóa thật).
  */
 (function () {
   "use strict";
 
   var path = (window.location.pathname || "").replace(/\\/g, "/");
-  var isTechnical =
-    path.indexOf("/technical/") !== -1 || /\/technical\.html$/i.test(path);
 
-  if (!isTechnical) {
+  var SECTIONS = [
+    {
+      match: function (p) {
+        return p.indexOf("/technical/") !== -1 || /\/technical\.html$/i.test(p);
+      },
+      title: "Kỹ thuật (Technical)",
+      message:
+        "Mục kỹ thuật yêu cầu đăng nhập. Dùng tài khoản được cấp bởi quản trị viên.",
+    },
+    {
+      match: function (p) {
+        return p.indexOf("/functional/") !== -1 || /\/functional\.html$/i.test(p);
+      },
+      title: "Chức năng (Functional)",
+      message:
+        "Mục chức năng yêu cầu đăng nhập. Dùng tài khoản được cấp bởi quản trị viên.",
+    },
+  ];
+
+  var section = null;
+  for (var i = 0; i < SECTIONS.length; i++) {
+    if (SECTIONS[i].match(path)) {
+      section = SECTIONS[i];
+      break;
+    }
+  }
+
+  if (!section) {
     return;
   }
 
@@ -23,10 +49,11 @@
     overlay.id = overlayId;
     overlay.innerHTML =
       '<div class="technical-auth-box">' +
-      "<h2>Kỹ thuật (Technical)</h2>" +
+      "<h2>" +
+      section.title +
+      "</h2>" +
       "<p>" +
-      (message ||
-        "Mục kỹ thuật yêu cầu đăng nhập. Dùng tài khoản được cấp bởi quản trị viên.") +
+      (message || section.message) +
       "</p>" +
       "<p class=\"technical-auth-hint\">Nếu trình duyệt chưa hiện hộp đăng nhập, tải lại trang hoặc mở qua server nội bộ (Docker / MoTaiLieu).</p>" +
       "</div>";
@@ -65,6 +92,6 @@
 
   /* file:// — không có auth server */
   showOverlay(
-    "Bạn đang mở file trực tiếp. Phần Kỹ thuật chỉ xem qua server có đăng nhập."
+    "Bạn đang mở file trực tiếp. Mục này chỉ xem qua server có đăng nhập."
   );
 })();

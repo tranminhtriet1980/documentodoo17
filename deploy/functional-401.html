@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Chuyển hướng</title>
+  <script>
+    (function () {
+      var host = location.hostname || "";
+      var home =
+        host === "docs.edupath.org.vn" || host.indexOf("edupath.org.vn") !== -1
+          ? "https://docs.edupath.org.vn/"
+          : location.origin + "/index.html";
+      location.replace(home);
+    })();
+  </script>
+</head>
+<body>
+  <p>Đang chuyển về trang chủ...</p>
+</body>
+</html>
